@@ -6,9 +6,6 @@
 # subject to an additional IP rights grant found at
 # http://polymer.github.io/PATENTS.txt
 
-#import 'PlaidAccount.schema'
-
-particle Starter 'Starter.js'
+particle Starter "Starter.js"
   Starter()
   consume root
-  #description `show ${list}`
