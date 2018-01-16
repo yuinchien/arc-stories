@@ -6,6 +6,6 @@
 # subject to an additional IP rights grant found at
 # http://polymer.github.io/PATENTS.txt
 
-particle Starter "Starter.js"
+particle Starter in "Starter.js"
   Starter()
   consume root
