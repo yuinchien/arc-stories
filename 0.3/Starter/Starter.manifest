@@ -9,4 +9,4 @@
 particle Starter in 'Starter.js'
   Starter()
   consume root
-  description `Starter Particle`
+  description `starter particle`
