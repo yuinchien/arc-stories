@@ -6,7 +6,7 @@
 # subject to an additional IP rights grant found at
 # http://polymer.github.io/PATENTS.txt
 
-particle Starter in 'Starter.js'
-  Starter()
+particle TopStories in 'TopStories.js'
+  TopStories()
   consume root
   description `NYTimes Top Stories`

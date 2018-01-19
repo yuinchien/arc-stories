@@ -10,7 +10,7 @@
 
 defineParticle(({DomParticle}) => {
 
-  let host = 'starter';
+  let host = 'TopStories';
 
   let storyTemplate = `
 <style>
@@ -82,8 +82,7 @@ defineParticle(({DomParticle}) => {
       super(props);
       this._setState({data: []});
       this.httpRequest = null;
-      this.testVarible= "this is a test";  // I declare the variable here
-      // this.makeRequest();
+      this.makeRequest();
     }
 
     get template() {
@@ -101,15 +100,11 @@ defineParticle(({DomParticle}) => {
     }
 
     _render(props, state) {
-      // return {
-      //   data: state.data
-      // };
       return {
         storys: {
           $template: 'storys',
           models: state.data.map(story => {
             return {
-              // isBriefing: story.section=='Briefing',
               title: story.title,
               section: story.section,
               imgStyle: 'background-image:url('+ story.multimedia[ story.multimedia.length-1 ].url +');',
